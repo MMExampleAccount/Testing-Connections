@@ -1,0 +1,34 @@
+---
+title: "Hello R Quarto"
+format: html
+editor: visual
+jupyter: python3
+---
+
+# Header 1
+
+This is the first level of markdown text in a quarto document
+
+# Header 2
+
+This is the second example of the first level of markdown text in a quarto document
+
+```{r}
+print("Hello World!")
+```
+
+Quarto allows for extra customizations, such as code cell options.
+
+```{r}
+#| echo: false
+246 * 92 + 1
+```
+
+# Python
+
+Quarto allows you to mix code types in a document, so long as the YAML properties are correct.
+
+```{python}
+print("Hello World")
+```
+

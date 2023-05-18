@@ -1,0 +1,26 @@
+---
+title: "Hello"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Header 1
+
+This is an R Markdown document, and may be more familiar to R users than Quarto
+
+```{r}
+print("Hello World!")
+```
+
+# Header 2
+
+It has options for code cells
+
+```{r, echo=FALSE}
+298 * 27 + 99
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
