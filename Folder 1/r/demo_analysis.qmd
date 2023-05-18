@@ -1,0 +1,55 @@
+---
+title: "Demo"
+format: html
+editor: visual
+---
+
+# Imports
+
+## Library Imports
+
+```{r}
+# | message: false
+# | warning: false
+library(readxl)
+library(here)
+```
+
+## Data Imports
+
+We imported our source data
+
+```{r}
+data <- read_excel(here("data","DEMO_DATA","demo_data.xlsx"))
+```
+
+# Simple Summary
+
+Our data was 4 rows of 3 variables.
+
+```{r}
+dim(data)
+```
+
+Our columns were named "var1", "var2", and "var3".
+
+```{r}
+colnames(data)
+```
+
+Var1 was a character variable, var2 was a numeric, and var3 was a logical boolean.
+
+Var2 had a range of 1-4, mean of 2.50, median of 2.50, and IQR of 1.75 - 3.25.
+
+Var3 had 2 TRUE and 2 FALSE observations.
+
+```{r}
+summary(data)
+```
+
+Var1 had values for "Dataset", "Hello", "Testing", and "World".
+
+```{r}
+table(data$var1)
+```
+
